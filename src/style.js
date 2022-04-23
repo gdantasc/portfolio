@@ -1,17 +1,18 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #010715;
-        --shape: #ffffff;
+        --text-title: #363f5f;
+        --text-body: #969cb3;
+
         --red: #e52e4d;
         --blue: #5429cc;
         --green: #33cc95;
         --purple: #241359;
-        
         --blue-light: #6933ff;
-        --text-title: #363f5f;
-        --text-body: #969cb3;
+        
     }
     * {
         margin: 0;
@@ -40,7 +41,18 @@ export const GlobalStyle = createGlobalStyle`
     }
     button {
         cursor: pointer;
-    }
+    }      
+`;
 
-      
+export const ProfileContainer = styled.div`
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    background: linear-gradient(135deg, #5c258d, #4389a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `;
