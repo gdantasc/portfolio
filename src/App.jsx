@@ -1,13 +1,16 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { GlobalStyle, ProfileContainer } from "./style";
+import { GlobalStyle, ProfileContainer, ProfileContent } from "./style";
 
 function App() {
   return (
     <>
       <Header />
       <ProfileContainer>
-        <h1>Desenvolvedor Front-End</h1>
+        <ProfileContent>
+          <h1>Gabriel Cavalcante</h1>
+          <p>Desenvolvedor Web Front-End</p>
+        </ProfileContent>
       </ProfileContainer>
       <Footer />
       <GlobalStyle />
