@@ -63,3 +63,31 @@ export const ProfileContent = styled.div`
     color: #fff;
   }
 `;
+
+export const AboutContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+`;
+
+export const TechnologiesContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+`;
+
+export const ProjectContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+`;
+
+export const ContactContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+`;
