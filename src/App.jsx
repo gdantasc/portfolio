@@ -6,7 +6,7 @@ import {
   ProfileContent,
   AboutContainer,
   TechnologiesContainer,
-  ProjectContainer,
+  ProjectsContainer,
   ContactContainer,
 } from "./style";
 
@@ -14,22 +14,22 @@ function App() {
   return (
     <>
       <Header />
-      <ProfileContainer>
+      <ProfileContainer id="start">
         <ProfileContent>
           <h1>Gabriel Cavalcante</h1>
           <p>Desenvolvedor Web Front-End</p>
         </ProfileContent>
       </ProfileContainer>
-      <AboutContainer>
+      <AboutContainer id="about">
         <h1>Sobre</h1>
       </AboutContainer>
-      <TechnologiesContainer>
+      <TechnologiesContainer id="technologies">
         <h1>Tecnologias</h1>
       </TechnologiesContainer>
-      <ProjectContainer>
+      <ProjectsContainer id="projects">
         <h1>Projetos</h1>
-      </ProjectContainer>
-      <ContactContainer>
+      </ProjectsContainer>
+      <ContactContainer id="contact">
         <h1>Contato</h1>
       </ContactContainer>
       <Footer />

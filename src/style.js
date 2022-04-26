@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         @media(max-width:720px){
             font-size: 87.5%; 
         }
+        scroll-behavior: smooth;
     }
     body{ 
         background:  var(--background);
@@ -65,28 +66,28 @@ export const ProfileContent = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 5rem);
   display: flex;
   align-items: center;
   color: #fff;
 `;
 
 export const TechnologiesContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 5rem);
   display: flex;
   align-items: center;
   color: #fff;
 `;
 
-export const ProjectContainer = styled.div`
-  height: 100vh;
+export const ProjectsContainer = styled.div`
+  height: calc(100vh - 5rem);
   display: flex;
   align-items: center;
   color: #fff;
 `;
 
 export const ContactContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 5rem);
   display: flex;
   align-items: center;
   color: #fff;

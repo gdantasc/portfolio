@@ -7,11 +7,11 @@ const Header = () => {
     <HeaderComponent>
       <nav>
         <Path>
-          <a>Home</a>
-          <a>Sobre</a>
-          <a>Tecnologias</a>
-          <a>Projetos</a>
-          <a>Contato</a>
+          <a href="#start">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#technologies">Tecnologias</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
         </Path>
         <Media>
           <a

@@ -5,6 +5,9 @@ export const HeaderComponent = styled.header`
   background: var(--purple);
   border-bottom: 2px solid var(--blue-light);
   display:flex ;
+  width: 100%;
+  top: 0;
+  position: fixed;
   color: #fff;
   font-weight: bold;
 
@@ -22,18 +25,19 @@ export const HeaderComponent = styled.header`
 
         }
 }
+
 `;
 
 export const Path = styled.div`
-  color: #fff;
   a {
-    display: inline-block;
     position: relative;
     padding: 0 0.5rem;
     height: 5rem;
     line-height: 5rem;
     cursor: pointer;
     transition: color 0.2s;
+    text-decoration: none;
+    color: #fff;
 
     & + a {
       margin-left: 2rem;
@@ -58,6 +62,9 @@ export const Path = styled.div`
       background: var(--yellow);
     }
   }
+  @media (max-width: 670px) {
+    display: none;
+  }
 `;
 
 export const Media = styled.div`
@@ -68,7 +75,6 @@ export const Media = styled.div`
   padding: 0 0.5rem;
   height: 5rem;
   transition: color 0.2s;
-  cursor: pointer;
 
   a {
     margin: 0 15px;
@@ -77,6 +83,7 @@ export const Media = styled.div`
 
     :hover {
       filter: brightness(0.5);
+      cursor: pointer;
     }
   }
 `;
