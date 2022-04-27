@@ -1,18 +1,18 @@
 import React from "react";
-import { HeaderComponent, Path, Media } from "./style";
+import { HeaderComponent, Menu, Media } from "./style";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
   return (
     <HeaderComponent>
       <nav>
-        <Path>
+        <Menu>
           <a href="#start">Home</a>
           <a href="#about">Sobre</a>
           <a href="#technologies">Tecnologias</a>
           <a href="#projects">Projetos</a>
           <a href="#contact">Contato</a>
-        </Path>
+        </Menu>
         <Media>
           <a
             href="https://github.com/gdantasc"

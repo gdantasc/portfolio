@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
-  height: 5rem;
   background: var(--purple);
   border-bottom: 2px solid var(--blue-light);
   display:flex ;
@@ -22,13 +21,10 @@ export const HeaderComponent = styled.header`
         display: flex;
         width: 100% ;
         justify-content: space-around;
-
         }
-}
+  }`;
 
-`;
-
-export const Path = styled.div`
+export const Menu = styled.div`
   a {
     position: relative;
     padding: 0 0.5rem;
