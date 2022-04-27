@@ -38,24 +38,26 @@ export const Menu = styled.div`
     & + a {
       margin-left: 2rem;
     }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 0;
+      height: 3px;
+      display: block;
+      right: 15px;
+      background: var(--green);
+      transition: width 0.5s ease;
+    }
 
     &:hover {
       color: var(--green);
     }
-
-    &.active {
-      color: var(--white);
-      font-weight: bold;
-    }
-
-    &.active::after {
-      height: 3px;
-      border-radius: 3px 3px 0 0;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: var(--yellow);
+    &:hover:after {
+      width: 80%;
+      left: 10px;
+      background: var(--green);
+      cursor: pointer;
     }
   }
   @media (max-width: 670px) {
@@ -78,7 +80,7 @@ export const Media = styled.div`
     color: #fff;
 
     :hover {
-      filter: brightness(0.5);
+      color: var(--green);
       cursor: pointer;
     }
   }
