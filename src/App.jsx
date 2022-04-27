@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Atoms/Header";
+import Footer from "./components/Atoms/Footer";
 import {
   GlobalStyle,
   ProfileContainer,
