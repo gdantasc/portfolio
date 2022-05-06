@@ -15,12 +15,6 @@ function App() {
     <>
       <Header />
 
-      <AboutContainer id="about">
-        <h1>Sobre</h1>
-      </AboutContainer>
-      <TechnologiesContainer id="technologies">
-        <h1>Tecnologias</h1>
-      </TechnologiesContainer>
       <ProjectsContainer id="projects">
         <h1>Projetos</h1>
       </ProjectsContainer>
