@@ -14,10 +14,6 @@ function App() {
   return (
     <>
       <Header />
-
-      <ContactContainer id="contact">
-        <h1>Contato</h1>
-      </ContactContainer>
       <Footer />
       <GlobalStyle />
     </>
