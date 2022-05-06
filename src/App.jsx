@@ -14,12 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <ProfileContainer id="start">
-        <ProfileContent>
-          <h1>Gabriel Cavalcante</h1>
-          <p>Desenvolvedor Web Front-End</p>
-        </ProfileContent>
-      </ProfileContainer>
+
       <AboutContainer id="about">
         <h1>Sobre</h1>
       </AboutContainer>
