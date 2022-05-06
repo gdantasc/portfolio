@@ -15,9 +15,6 @@ function App() {
     <>
       <Header />
 
-      <ProjectsContainer id="projects">
-        <h1>Projetos</h1>
-      </ProjectsContainer>
       <ContactContainer id="contact">
         <h1>Contato</h1>
       </ContactContainer>
