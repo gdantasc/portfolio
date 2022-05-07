@@ -53,7 +53,6 @@ export const Menu = styled.div`
     }
 
     &:hover {
-      /* color: var(--green); */
       background: linear-gradient(135deg, #5c258d, #4389a2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
