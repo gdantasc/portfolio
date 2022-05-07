@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
-  background: var(--purple);
+  background: var(--background);
   border-bottom: 2px solid var(--blue-light);
   display:flex ;
   width: 100%;
@@ -22,7 +22,8 @@ export const HeaderComponent = styled.header`
         width: 100% ;
         justify-content: space-around;
         }
-  }`;
+  }
+  `;
 
 export const Menu = styled.div`
   a {
@@ -46,17 +47,22 @@ export const Menu = styled.div`
       height: 3px;
       display: block;
       right: 15px;
-      background: var(--green);
+      background: linear-gradient(135deg, #5c258d, #4389a2);
+      -webkit-text-fill-color: transparent;
       transition: width 0.5s ease;
     }
 
     &:hover {
-      color: var(--green);
+      /* color: var(--green); */
+      background: linear-gradient(135deg, #5c258d, #4389a2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &:hover:after {
       width: 80%;
       left: 10px;
-      background: var(--green);
+      background: linear-gradient(135deg, #5c258d, #4389a2);
+      -webkit-text-fill-color: transparent;
       cursor: pointer;
     }
   }
@@ -80,8 +86,12 @@ export const Media = styled.div`
     color: #fff;
 
     :hover {
-      color: var(--green);
       cursor: pointer;
+      background: linear-gradient(135deg, #5c258d, #4389a2);
+      -webkit-text-fill-color: transparent;
+      border-radius: 50px;
+      width: 30px;
+      height: 30px;
     }
   }
 `;
