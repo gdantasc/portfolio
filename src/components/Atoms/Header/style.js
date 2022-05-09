@@ -5,6 +5,7 @@ export const HeaderComponent = styled.header`
   border-bottom: 2px solid var(--blue-light);
   display:flex ;
   width: 100%;
+  height: 5rem;
   top: 0;
   position: fixed;
   color: #fff;

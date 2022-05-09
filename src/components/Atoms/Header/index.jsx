@@ -7,7 +7,7 @@ const Header = () => {
     <HeaderComponent>
       <nav>
         <Menu>
-          <a href="#start">Home</a>
+          <a href="#start">Início</a>
           <a href="#about">Sobre</a>
           <a href="#technologies">Tecnologias</a>
           <a href="#projects">Projetos</a>
