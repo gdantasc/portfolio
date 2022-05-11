@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
   background: var(--background);
-  border-bottom: 2px solid var(--blue-light);
+  border-bottom: 2px solid var(--purple);;
   display:flex ;
   width: 100%;
   height: 5rem;
@@ -84,14 +84,11 @@ export const Media = styled.div`
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
+    transition: color 0.2s;
 
     :hover {
       cursor: pointer;
-      background: linear-gradient(135deg, #5c258d, #4389a2);
-      -webkit-text-fill-color: transparent;
-      border-radius: 50px;
-      width: 30px;
-      height: 30px;
+      color: var(--purple);
     }
   }
 `;
