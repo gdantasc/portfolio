@@ -1,24 +1,23 @@
 import Header from "./components/Atoms/Header";
 import Footer from "./components/Atoms/Footer";
-import Profile from "./components/Organisms/Profile";
+import Navbar from "./components/Atoms/Navbar";
 import About from "./components/Organisms/About";
 import Technologies from "./components/Organisms/Technologies";
 import Projects from "./components/Organisms/Projects";
 import Contact from "./components/Organisms/Contact";
 
-import { GlobalStyle } from "./style";
-
 function App() {
   return (
     <>
+      <div className="bg-circle1"></div>
+      <div className="bg-circle2"></div>
       <Header />
-      <Profile />
+      <Navbar />
       <About />
       <Technologies />
       <Projects />
       <Contact />
       <Footer />
-      <GlobalStyle />
     </>
   );
 }
