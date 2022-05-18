@@ -1,94 +1,43 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-export const HeaderComponent = styled.header`
-  background: var(--background);
-  border-bottom: 2px solid var(--purple);;
-  display:flex ;
-  width: 100%;
-  height: 5rem;
-  top: 0;
-  position: fixed;
-  color: #fff;
-  font-weight: bold;
-
-  margin: 0 auto;
-  padding: 0 2rem;
-
-  display: flex;
-  align-items: center;
-
-    nav {
-        height: 5rem;
-        display: flex;
-        width: 100% ;
-        justify-content: space-around;
-        }
-  }
-  `;
-
-export const Menu = styled.div`
-  a {
-    position: relative;
-    padding: 0 0.5rem;
-    height: 5rem;
-    line-height: 5rem;
-    cursor: pointer;
-    transition: color 0.2s;
-    text-decoration: none;
-    color: #fff;
-
-    & + a {
-      margin-left: 2rem;
+const animateTitle = keyframes`
+  from {
+      transform: translateY(-100px);
+      opacity: 0;
     }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 30px;
-      width: 0;
-      height: 3px;
-      display: block;
-      right: 15px;
-      background: linear-gradient(135deg, #5c258d, #4389a2);
-      -webkit-text-fill-color: transparent;
-      transition: width 0.5s ease;
+      
+  to {
+      transform: translateY(0);
+      opacity: 1;
     }
-
-    &:hover {
-      background: linear-gradient(135deg, #5c258d, #4389a2);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &:hover:after {
-      width: 80%;
-      left: 10px;
-      background: linear-gradient(135deg, #5c258d, #4389a2);
-      -webkit-text-fill-color: transparent;
-      cursor: pointer;
-    }
-  }
-  @media (max-width: 670px) {
-    display: none;
-  }
 `;
 
-export const Media = styled.div`
+export const HeaderComponent = styled.header`
+  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  backdrop-filter: blur(20px);
+  animation: ${animateTitle} 1s ease;
 
-  padding: 0 0.5rem;
-  height: 5rem;
-  transition: color 0.2s;
+  h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: Poppins;
+  }
 
-  a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.2s;
-
-    :hover {
-      cursor: pointer;
-      color: var(--purple);
-    }
+  h2 {
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--color-pri);
+    font-family: "Open Sans";
+    letter-spacing: 1px;
   }
 `;
