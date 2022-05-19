@@ -12,6 +12,21 @@ export const IconContainer = styled.div`
       fill: rgba(88, 117, 248, 0.151);
       border: 2px solid rgba(88, 117, 248, 0.192);
     }
+    @media (max-width: 820px) {
+      font-size: 70px;
+      border-radius: 50%;
+      padding: 10px;
+      transition: fill 0.1s ease;
+      fill: rgb(209, 217, 252);
+    }
+
+    @media (max-width: 500px) {
+      font-size: 50px;
+      border-radius: 50%;
+      padding: 10px;
+      transition: fill 0.1s ease;
+      fill: rgb(209, 217, 252);
+    }
   }
 `;
 
