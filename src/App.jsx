@@ -13,10 +13,10 @@ function App() {
       <div className="bg-circle2"></div>
       <Header />
       <Navbar />
-      <About />
-      <Technologies />
-      <Projects />
-      <Contact />
+      <About id="about" />
+      <Technologies id="technologies" />
+      <Projects id="projects" />
+      <Contact id="contact" />
       <Footer />
     </>
   );
